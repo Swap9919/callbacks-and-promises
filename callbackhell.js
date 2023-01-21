@@ -11,4 +11,14 @@ setTimeout(function(){
 
  console.log("How are you");
 
- 
+const animateAll = (animate) => {
+      setTimeout(() => {
+            animate(words[0]);
+            setTimeout(() => {
+                  animate(words[1]);
+                  setTimeout(() => {
+                        animate(words[2]);
+                  }, 1000)
+            }, 1000)
+      }, 1000)
+}
